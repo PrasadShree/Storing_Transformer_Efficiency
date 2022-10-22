@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TRANSFORMER EFFICIENCY</title>
+      </head>
+  <h1><b>STORING TRANSFORMER EFFICIENCY:</b></h1>
+  <body>
+
+    <form method="POST" action="#">
+      {% csrf_token %}
+      <br>
+      <label for="Transformer_ID">Transformer ID:  </label>
+      <input id="Transformer_ID" type="text" name="TransformerID" value=""placeholder="Enter Transformer_ID">
+      <br>
+      <br>
+      <label for="Transformer_Test Date">Transformer_Test Date:  </label>
+      <input id="Transformer_Test_Date" type="date" name="TransformerDate" value=""placeholder="EnterTest Date">
+      <br>
+      <br>
+      <label for="Transformer Rating in W">Transformer Rating in W:   </label>
+      <input id="Transformer_Rating_in_W" type="number" name="TransformerRating" value=""placeholder="Enter Rating in W">
+      <br>
+      <br>
+      <label for="Transformer Primary Rating in W">Transformer Primary Rating in W:</label>
+      <input id="Transformer_Primary_Rating_in_W" type="number" name="TransformerPrimary" value=""placeholder="Enter Primary Rating in W">
+      <br>
+      <br>
+      <label for="Transformer Secondary  Rating in W">Transformer Secondary Rating in W: </label>
+      <input id="Transformer_Secondary_Rating_in_W" type="number" name="TransformerSecondary" value=""placeholder="Enter Sec.. Rating in W">
+      <br>
+      <br>
+      <label for="TransformerEfficiency in %">TransformerEfficiency in %: </label>
+      <input id="TransformerEfficiencyPer" type="number" name="TransformerEfficiencyPer" value=""placeholder=" ">
+      <br>
+      <br>
+        <button type="submit">save</button>
+      </form>
+
+  </body>
+</html>

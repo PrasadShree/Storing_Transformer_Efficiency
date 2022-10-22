@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<style>
+      table,tr,th,td{
+      border:1px solid #000;
+      width:50%;
+      height:50px;
+      }
+
+    </style>
+     </head>
+  <body>
+    {% if tmp %}
+  <table >
+      <thead>
+      <th>Transformer_Id </th>
+      <th> Transformer_Date </th>
+      <th> Transformer_Rating </th>
+      <th> Transformer_PRating </th>
+      <th> Transformer_SRating</th>
+      <th> Transformer_Effi</th>
+      </thead>
+      {% for tmps in tmp %}
+      <tr>
+        <td>{{tmps.Transformer_Id}}</td>
+        <td>{{tmps.Transformer_Date}}</td>
+        <td>{{tmps.Transformer_Rating}}</td>
+        <td>{{tmps.Transformer_PRating}}</td>
+        <td>{{tmps.Transformer_SRating}}</td>
+        <td>{{tmps.Transformer_Effi}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p> No Records found</p>
+    {% endif %}
+  </body>
+</html>
